@@ -1,0 +1,89 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Titel styling */
+h1 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Knop basisstijl */
+button.btn {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.back {
+    color:#0066cc;
+    border-color: #0066cc;
+    background-color: white;
+    margin-top: 10px;
+}
+.back:hover {
+    color: white;
+    background-color: #0066cc;
+}
+
+/* Specifieke stijlen voor moeilijkheidsgraden */
+button.easy {
+    background-color: #4CAF50; /* Groen */
+    color: white;
+}
+
+button.normal {
+    background-color: #FF9800; /* Oranje */
+    color: white;
+}
+
+button.hard {
+    background-color: #f44336; /* Rood */
+    color: white;
+}
+
+/* Hover-effect voor knoppen */
+button.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

@@ -26,7 +26,7 @@ Class CpuFunctions{
     public function MakeChoiceNormal(){
         $cpuChoiceNr = random_int(0, 2);
         $result = null;
-        switch($cpuChoice) {
+        switch($cpuChoiceNr) {
             case 0:
                 $result = "rock";
                 break;
@@ -54,7 +54,7 @@ Class CpuFunctions{
 
         // If there are no previous choices, pick randomly
         if (empty($prevChoices) || !isset($prevChoices)) {
-            return MakeChoiceNormal();
+            return $this->MakeChoiceNormal();
         }
 
         // Count the occurrences of each choice
